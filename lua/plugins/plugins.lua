@@ -28,6 +28,9 @@ return packer.startup(function(use)
   -- packer
   use("wbthomason/packer.nvim")
 
+  -- lua functions that many plugins use
+  use("nvim-lua/plenary.nvim")
+
   -- colorscheme
   use("bluz71/vim-nightfly-guicolors")
 
@@ -45,6 +48,20 @@ return packer.startup(function(use)
 
   -- replace with register content (gr + w (motion : word))
   use("inkarkat/vim-ReplaceWithRegister")
+
+  -- commenting (gc + motion)
+  -- gcc (line comment)
+  -- gc9j (comment line 1 to line 9 (below))
+  use("numToStr/Comment.nvim")
+
+  -- file explorer
+  use("nvim-tree/nvim-tree.lua")
+
+  -- icons
+  use("nvim-tree/nvim-web-devicons")
+
+  -- statusline
+  use("nvim-lualine/lualine.nvim")
  
   if packer_bootstrap then
     require('packer').sync()
