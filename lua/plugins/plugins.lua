@@ -25,7 +25,7 @@ if not status then
 end
 
 return packer.startup(function(use)
-  -- packer
+  -- packer (plugins manager)
   use("wbthomason/packer.nvim")
 
   -- lua functions that many plugins use
