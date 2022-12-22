@@ -23,7 +23,7 @@ scoop install gcc make fzf ripgrep fd
 
 ### MacOS
 
-#### install via brew
+#### install via Homebrew
 
 ```bash
 brew install gcc make fzf ripgrep fd
