@@ -17,6 +17,9 @@ opt.wrap = false
 opt.ignorecase = true
 opt.smartcase = true
 
+-- allow the mouse to be used in neovim
+opt.mouse = "a"
+
 -- cursor line
 opt.cursorline = true
 
