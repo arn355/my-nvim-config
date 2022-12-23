@@ -5,11 +5,13 @@ This is configuration for my neovim.
 ## Requirements
 
 To install telescope fuzzy finder plugin (Required)
-- gcc
+
+- gcc (make sure that gcc and neovim have the save architecture ex. gcc x64 and nvim x64)
 - make
 - fzf
 
 To make better telescope fuzzy finder performance (Optional)
+
 - ripgrep
 - fd
 
@@ -36,4 +38,3 @@ brew install gcc make fzf ripgrep fd
 ```bash
 sudo apt install gcc make fzf ripgrep fd-find
 ```
-
