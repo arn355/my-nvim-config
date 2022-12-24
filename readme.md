@@ -1,4 +1,4 @@
-# My Neovim Configuration (In Process)
+# My Neovim Configuration
 
 This is configuration for my neovim.
 
@@ -37,4 +37,20 @@ brew install gcc make fzf ripgrep fd
 
 ```bash
 sudo apt install gcc make fzf ripgrep fd-find
+```
+
+## Install the configuration
+
+Make sure you not have nvim folder in your config path
+
+### Window
+
+```ps
+git clone https://github.com/arn355/my-nvim-config.git $HOME\AppData\Local\nvim
+```
+
+### MacOS / Linux
+
+```bash
+git clone https://github.com/arn355/my-nvim-config.git ~/.config/nvim
 ```
