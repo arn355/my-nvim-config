@@ -1,5 +1,5 @@
-local treesitter_setup, treesitter = pcall(require, "nvim-treesitter.configs")
-if not treesitter_setup then
+local setup, treesitter = pcall(require, "nvim-treesitter.configs")
+if not setup then
 	return
 end
 
@@ -35,10 +35,5 @@ treesitter.setup({
 	auto_install = true, -- auto install above language parsers
 })
 
-local install_setup, treesitter_install = pcall(require, "nvim-treesitter.install")
-if not install_setup then
-	return
-end
-
 -- to make sure that tree-sitter is using gcc
-treesitter_install.compilers = { "gcc" }
+require("nvim-treesitter.install").compilers = { "gcc" }
