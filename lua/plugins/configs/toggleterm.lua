@@ -1,5 +1,5 @@
-local setup, toggleterm = pcall(require, "toggleterm")
-if not setup then
+local toggleterm_setup, toggleterm = pcall(require, "toggleterm")
+if not toggleterm_setup then
 	return
 end
 
@@ -18,5 +18,26 @@ toggleterm.setup({
 	shell = "pwsh.exe", -- change the default shell to powershell
 	float_opts = {
 		border = "curved",
+		-- width and height for floating terminal
+		width = 100,
+		height = 80,
 	},
 })
+
+function _G.set_terminal_keymaps()
+	local opts = { buffer = 0, noremap = true }
+	-- in terminal mode user <esc> or jk to enter normal mode
+	vim.keymap.set("t", "<esc>", [[<C-n>]], opts)
+	vim.keymap.set("t", "jk", [[<C-n>]], opts)
+end
+
+vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()")
+
+local Terminal = require("toggleterm.terminal").Terminal
+local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
+
+function _LAZYGIT_TOGGLE()
+	lazygit:toggle()
+end
+
+vim.keymap.set("n", "<C-g>", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", { noremap = true, silent = true })
