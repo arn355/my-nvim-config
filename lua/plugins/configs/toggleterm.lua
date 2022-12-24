@@ -40,4 +40,6 @@ function _LAZYGIT_TOGGLE()
 	lazygit:toggle()
 end
 
+-- can toggle lazygit in normal and terminal mode
 vim.keymap.set("n", "<C-g>", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", { noremap = true, silent = true })
+vim.keymap.set("t", "<C-g>", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", { noremap = true, silent = true })
