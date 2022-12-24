@@ -10,10 +10,14 @@ To install telescope fuzzy finder plugin (Required)
 - make
 - fzf
 
-To make better telescope fuzzy finder performance (Optional)
+To make better telescope fuzzy finder performance (Recommended)
 
 - ripgrep
 - fd
+
+To use lazygit in toggle terminal and all usage (Optional)
+
+- lazygit
 
 ### Window
 
