@@ -11,6 +11,10 @@ local keymap = vim.keymap
 -- exit insert mode
 keymap.set("i", "jk", "<ESC>")
 
+-- Move line up/down
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
