@@ -6,7 +6,7 @@ This is configuration for my neovim.
 
 Node (Required)
 
-- (node)[https://nodejs.org/en/download/]
+- [node](https://nodejs.org/en/download/)
 
 To install telescope fuzzy finder plugin (Required)
 
