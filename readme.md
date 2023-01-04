@@ -4,43 +4,40 @@ This is configuration for my neovim.
 
 ## Requirements
 
+Node (Required)
+
+- (node)[https://nodejs.org/en/download/]
+
 To install telescope fuzzy finder plugin (Required)
 
-- gcc (make sure that gcc and neovim have the save architecture ex. gcc x64 and nvim x64)
-- make
-- fzf
+- [gcc](https://www.mingw-w64.org/) (make sure that gcc and neovim have the save architecture ex. gcc x64 and nvim x64)
+- [make](https://www.gnu.org/software/make/)
+- [fzf](https://github.com/junegunn/fzf)
+
+To fix error with tree-sitter executable not found (Required)
+
+- [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter/blob/master/cli/README.md)
 
 To make better telescope fuzzy finder performance (Recommended)
 
-- ripgrep
-- fd
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [fd](https://github.com/sharkdp/fd)
 
 To use lazygit in toggle terminal and all usage (Optional)
 
-- lazygit
+- [lazygit](https://github.com/jesseduffield/lazygit)
 
-### Window
+To use C# parser and run C# based program (Optional)
+
+- [dotnet-sdk](https://dotnet.microsoft.com/en-us/download)
+
+### Shortcut for Window
 
 #### install via scoop
 
 ```ps
-scoop install gcc make fzf ripgrep fd
-```
-
-### MacOS
-
-#### install via Homebrew
-
-```bash
-brew install gcc make fzf ripgrep fd
-```
-
-### Linux (Debian-Based)
-
-#### install via apt
-
-```bash
-sudo apt install gcc make fzf ripgrep fd-find
+scoop bucket add extras
+scoop install gcc make fzf ripgrep fd tree-sitter lazygit dotnet-sdk nodejs-lts
 ```
 
 ## Install the configuration
