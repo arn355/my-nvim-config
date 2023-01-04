@@ -39,7 +39,7 @@ To use autopep8 (python formatter) and python **(Optional)**
 
 ```ps
 scoop bucket add extras
-scoop install gcc make fzf ripgrep fd tree-sitter lazygit dotnet-sdk nodejs-lts
+scoop install gcc make fzf ripgrep fd tree-sitter lazygit dotnet-sdk nodejs-lts python
 ```
 
 ## Install the configuration
