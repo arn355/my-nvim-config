@@ -33,6 +33,8 @@ To use C# parser and run C# based program **(Optional)**
 
 To use autopep8 (python formatter) and python **(Optional)**
 
+- [python](https://www.python.org/downloads/)
+
 ### Shortcut for Window
 
 #### install via scoop
